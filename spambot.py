@@ -77,7 +77,7 @@ SMEX_USERS = []
 for x in SUDO: 
     SMEX_USERS.append(x)
     
-async def start_rizoel():
+async def start_spambot():
     global idk
     global ydk
     global wdk
