@@ -870,7 +870,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("𝐉𝐨𝐢𝐧 𝐇𝐨𝐠𝐲𝐚 𝐒𝐢𝐫")
+                await event.edit("Successfully Joined sirji Ab kya gand me gush jauu")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -903,13 +903,13 @@ async def _(e):
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲  = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
+    usage = "ɱόδύɭέʂ ήάɱέ  = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        rizoel = ("".leave(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".leave(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) == 7:
-            bc = rizoel[0]
+            bc = spambot[0]
             bc = int(bc)
-            text = "RiZoeL Spam Bot Leaving....."
+            text = "Philips Spam Bot Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
@@ -948,11 +948,11 @@ async def _(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
+    usage = "ɱόδύɭέʂ ήάɱέ = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
-            bc = rizoel[0]
+            bc = spambot[0]
             bc = int(bc)
             text = "Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
@@ -997,16 +997,16 @@ async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(rizoel) == 2:
-            message = str(rizoel[1])
-            counter = int(rizoel[0])
+        if len(spambot) == 2:
+            message = str(spambot[1])
+            counter = int(spambot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             for _ in range(counter):
@@ -1014,7 +1014,7 @@ async def spam(e):
                 await gifspam(e, smex)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             if counter > 100:
                 return await e.reply(error, parse_mode=None, link_preview=None )
             await asyncio.wait([e.respond(message) for i in range(counter)])
@@ -1054,12 +1054,12 @@ async def spam(e):
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         smex = await e.get_reply_message()
-        rizoel = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        rizoelop = rizoel[1:]
+        spambot = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
+        rizoelop = spambot[1:]
         if len(rizoelop) == 2:
             message = str(rizoelop[1])
             counter = int(rizoelop[0])
-            sleeptime = float(rizoel[0])
+            sleeptime = float(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -1069,7 +1069,7 @@ async def spam(e):
                     await asyncio.sleep(sleeptime)
         elif e.reply_to_msg_id and smex.media:  
             counter = int(rizoelop[0])
-            sleeptime = float(rizoel[0])
+            sleeptime = float(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -1078,7 +1078,7 @@ async def spam(e):
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
             counter = int(rizoelop[0])
-            sleeptime = float(rizoel[0])
+            sleeptime = float(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
