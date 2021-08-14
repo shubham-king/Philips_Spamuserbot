@@ -112,7 +112,7 @@ async def start_spambot():
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await idk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await idk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -136,7 +136,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 2")
             await ydk.start()
-            await ydk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await ydk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await ydk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -161,7 +161,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 3")
             await  wdk.start()
-            await wdk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await wdk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await wdk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await wdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -186,7 +186,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 4")
             await hdk.start()
-            await hdk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await hdk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await hdk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await hdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -211,7 +211,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 5")
             await sdk.start()
-            await sdk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await sdk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await sdk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await sdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -236,7 +236,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 6")
             await adk.start()
-            await adk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await adk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await adk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await adk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -261,7 +261,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 7")
             await bdk.start()
-            await bdk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await bdk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await bdk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await bdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -287,7 +287,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 8")
             await cdk.start()
-            await cdk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await cdk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await cdk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await cdk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -312,7 +312,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 9")
             await ddk.start()
-            await ddk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await ddk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await ddk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await ddk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -338,7 +338,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 10")
             await edk.start()
-            await edk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await edk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await edk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await edk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -364,7 +364,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 11")
             await vkk.start()
-            await vkk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await vkk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await vkk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await vkk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -390,7 +390,7 @@ async def start_spambot():
         try:
             print("Booting Up The Client 12")
             await kkk.start()
-            await kkk(functions.channels.JoinChannelRequest(channel="@philips_userbot"))
+            await kkk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
             await kkk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await kkk.get_me()
             botid = telethon.utils.get_peer_id(botme)
@@ -416,8 +416,8 @@ async def start_spambot():
         try:
             print("Booting Up The Client 13")
             await lkk.start()
-            await lkk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            await lkk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
+            await lkk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await lkk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await lkk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -442,8 +442,8 @@ async def start_spambot():
         try:
             print("Booting Up The Client 14")
             await mkk.start()
-            await mkk(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await mkk(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await mkk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await mkk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await mkk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -468,8 +468,8 @@ async def start_spambot():
         try:
             print("Booting Up The Client 15")
             await sid.start()
-            await sid(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await sid(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await sid(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await sid(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botme = await sid.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -495,8 +495,8 @@ async def start_spambot():
             print("Booting Up The Client 16")
             await shy.start()
             botme = await shy.get_me()
-            await shy(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await shy(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await shy(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await shy(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -519,8 +519,8 @@ async def start_spambot():
             print("Booting Up The Client 17")
             await aan.start()
             botme = await aan.get_me()
-            await aan(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            await aan(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
+            await aan(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await aan(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -543,8 +543,8 @@ async def start_spambot():
             print("Booting Up The Client 18")
             await ake.start()
             botme = await ake.get_me()
-            await ake(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await ake(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await ake(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await ake(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -567,8 +567,8 @@ async def start_spambot():
             print("Booting Up The Client 19")
             await eel.start()
             botme = await eel.get_me()
-            await eel(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await eel(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await eel(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await eel(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -591,8 +591,8 @@ async def start_spambot():
             print("Booting Up The Client 20")
             await khu.start()
             botme = await khu.get_me()
-            await khu(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await khu(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await khu(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await khu(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -615,8 +615,8 @@ async def start_spambot():
             print("Booting Up The Client 21")
             await shi.start()
             botme = await shi.get_me()
-            await shi(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await shi(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await shi(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await shi(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -639,8 +639,8 @@ async def start_spambot():
             print("Booting Up The Client 22")
             await yaa.start()
             botme = await yaa.get_me()
-            await yaa(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await yaa(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await yaa(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await yaa(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -663,8 +663,8 @@ async def start_spambot():
             print("Booting Up The Client 23")
             await dav.start()
             botme = await dav.get_me()
-            await dav(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await dav(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await dav(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await dav(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -687,8 +687,8 @@ async def start_spambot():
             print("Booting Up The Client 24")
             await raj.start()
             botme = await raj.get_me()
-            await raj(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
-            await raj(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            await raj(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await raj(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -711,8 +711,8 @@ async def start_spambot():
             print("Booting Up The Client 1")
             await put.start()
             botme = await put.get_me()
-            await put(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            await put(functions.channels.JoinChannelRequest(channel="@DragNeelOP"))
+            await put(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
+            await put(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -729,7 +729,7 @@ async def start_spambot():
    
    
 loop = asyncio.get_event_loop()
-loop.run_until_complete(start_rizoel())       
+loop.run_until_complete(start_spambot())       
 
 async def gifspam(e, smex):
     try:
@@ -775,9 +775,9 @@ async def gifspam(e, smex):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
+    usage = "ɱόδύɭέʂ ήάɱέ = BIO\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in SMEX_USERS:
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(rizoel[0])
             text = "Changing Bio"
