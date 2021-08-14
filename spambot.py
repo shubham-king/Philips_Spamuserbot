@@ -1118,11 +1118,11 @@ async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(rizoel) == 2:
-            message = str(rizoel[1])
-            counter = int(rizoel[0])
+        if len(spambot) == 2:
+            message = str(spambot[1])
+            counter = int(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     if e.reply_to_msg_id:
@@ -1131,7 +1131,7 @@ async def spam(e):
                         await e.client.send_message(e.chat_id, message)
                     await asyncio.sleep(0.1)
         elif e.reply_to_msg_id and smex.media:  
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
@@ -1139,7 +1139,7 @@ async def spam(e):
                 await asyncio.sleep(0.1)  
         elif e.reply_to_msg_id and smex.text:
             message = smex.text
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
@@ -1179,16 +1179,16 @@ async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(rizoel) == 2:
-            message = str(rizoel[1])
+        if len(spambot) == 2:
+            message = str(spambot[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             for _ in range(counter):
                 reply = random.choice(RAID)
                 caption = f"{username} {reply}"
@@ -1200,7 +1200,7 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             c = b.first_name
-            counter = int(rizoel[0])
+            counter = int(spambot[0])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(RAID)
@@ -1290,10 +1290,10 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 11:
-            message = str(rizoel[0])
+            message = str(spambot[0])
             a = await e.client.get_entity(message)
             g = a.id
             que[g] = []
@@ -1344,14 +1344,14 @@ async def _(e):
 
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    usage = "MODULE NAME =Turn off Replyraid\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
         if len(e.text) > 12:
-            message = str(rizoel[0])
+            message = str(spambot[0])
             a = await e.client.get_entity(message)
             g = a.id
             try:
@@ -1359,7 +1359,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "Turn off Reply Raid is on process..."
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1370,7 +1370,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid"
+            text = "Turn off Reply Raid is in process..."
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1410,7 +1410,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\n♡︎ʀɪᴢᴏᴇʟ sᴘᴀᴍʙᴏᴛ♡︎\n`{ms}` ᴍs")
+        await event.edit(f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\n『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』\n`{ms}` ᴍs")
 
 
     
@@ -1522,7 +1522,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝐑𝐢𝐙𝐨𝐞𝐋 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
@@ -1530,16 +1530,11 @@ async def help(e):
     
         
 text = """
-┏━━┓━━┏━━━┓━━━━━━━━┏┓━
-┃┏┓┃┏┓┃┏━┓┃━━━━━━━━┃┃━
-┃┗┛┃┗┛┗┛━┛┃┏━━┓┏━━┓┃┃━
-┃━━┛┏┓┃┏━┏┓┃┏┓┃┃┏┓┃┃┃━
-┃┃┃┃┃┃┃┗━┛┃┃┗┛┃┃┃━┫┃┗━┓
-┗┛┗┛┗┛┗━━━┛┗━━┛┗━━┛┗━━┛"""
+『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』"""
 
 print(text)
 print("")
-print("SMEX! Rɪᴢᴏᴇʟ Multi Spam Bot Started Sucessfully.")
+print("SMEX! 『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』 Started Sucessfully.")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
