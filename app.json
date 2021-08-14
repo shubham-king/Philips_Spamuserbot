@@ -1,16 +1,16 @@
 {
-  "name": "RIZOEL SPAM BOT",
-  "description": "Telegram Fast And Stable Spam Bot By @TheRiZoeL",
-  "logo": "https://telegra.ph/file/98f3e01fcb05d98373cfc.jpg",
+  "name": "『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』",
+  "description": "Telegram Fast And Stable Spam Bot ",
+  "logo": "https://telegra.ph/file/76f82aeead3918bce5a12.jpg",
     "env": {
      "API_ID": {
         "description": "Api ID",
-        "value": "4014305",
+        "value": "put api id",
         "required": true
       },
       "API_HASH": {
         "description": "Api Hash",
-        "value": "b0cb9e17b2b8bcde3be7161c8bfa6013",
+        "value": "put api hash",
         "required": true
       },
       "SUDO": {
