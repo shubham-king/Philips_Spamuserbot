@@ -779,12 +779,12 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
-            bio = str(rizoel[0])
+            bio = str(spambot[0])
             text = "Changing Bio"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By RiZoeL Spam Bot")
+                await event.edit("Succesfully Changed Bio By 『ᴘʜɪʟɪᴘꜱ ꜱᴘᴀᴍ υꜱεɾɓσŧ』")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -821,7 +821,7 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
-            bc = rizoel[0]
+            bc = spambot[0]
             text = "Joining..."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
@@ -865,7 +865,7 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         spambot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
-            bc = rizoel[0]
+            bc = spambot[0]
             text = "Joining...."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
@@ -903,7 +903,7 @@ async def _(e):
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲  = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
         rizoel = ("".leave(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) == 7:
