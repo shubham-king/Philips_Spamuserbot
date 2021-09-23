@@ -112,8 +112,8 @@ async def start_spambot():
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@Philips_bots"))
-            await idk(functions.channels.JoinChannelRequest(channel="@FIGHTERS_UKNOWN"))
+            await idk(functions.channels.JoinChannelRequest(channel="@visionuserbots"))
+            await idk(functions.channels.JoinChannelRequest(channel="@CLAN_CRIMINALS"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
